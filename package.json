@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "make:bundle": "browserify dependencies.js -o VIRAL/js/bundle.js",
+    "dev": "serve VIRAL"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@thirdweb-dev/react": "^3.10.3",
     "@thirdweb-dev/sdk": "^3.10.3",
+    "buffer": "^6.0.3",
+    "emailjs-mime-parser": "^2.0.7",
     "ethers": "^5.7.2",
     "express": "^4.18.2",
     "web3": "^1.8.2"

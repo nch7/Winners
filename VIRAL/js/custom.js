@@ -4,8 +4,6 @@ Author: Askbootstrap
 Author URI: https://themeforest.net/user/askbootstrap
 Version: 1.0
 */
-import { ThirdwebSDK } from "@thirdweb-dev/sdk/evm";
-
 // const sdk = new ThirdwebSDK("mumbai");
 // const contract = await sdk.getContract("0x1833AC111fd43Ab9eD6917C521cd19E322899666");
 // const data = await contract.erc20.balance();
@@ -22,6 +20,10 @@ import { ThirdwebSDK } from "@thirdweb-dev/sdk/evm";
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled");
   });
+
+  $("#connect-button").click(() => {
+    connectWallet()
+  })
 
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
